@@ -11,6 +11,7 @@ namespace Core.Utilities.İnterceptors
 
     public abstract partial class MethodInterception : MethodInterceptionBaseAttribute
     {
+        //invocation : bussines method
         protected virtual void OnBefore(IInvocation invocation) { }
         protected virtual void OnAfter(IInvocation invocation) { }
         protected virtual void OnException(IInvocation invocation, System.Exception e) { }
